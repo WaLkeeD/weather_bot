@@ -17,7 +17,7 @@ dp = Dispatcher()
 # Обработчик команды /start
 @dp.message(Command(commands="start"))
 async def send_welcome(message: types.Message):
-    await message.answer("Приветственный блок работает отлично!")
+    await message.answer("Приветственный блок работает!")
 
 @dp.message(Command(commands="info"))
 async def send_info(message: types.Message):
